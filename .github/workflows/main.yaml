@@ -55,7 +55,7 @@ jobs:
         run: |
           wget -q https://gosspublic.alicdn.com/ossutil/1.7.15/ossutil64
           chmod +x ./ossutil64
-          ./ossutil64 config -e oss-cn-shanghai.aliyuncs.com -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
-          echo y | ./ossutil64 rm oss://hutu2/github -r
-          ./ossutil64 cp github-contribution-grid-snake.svg oss://hutu2/github/
-          ./ossutil64 cp github-contribution-grid-snake-dark.svg oss://hutu2/github/
+          ./ossutil64 config -e oss-cn-hangzhou.aliyuncs.com -i $OSS_AccessKeyID -k $OSS_AccessKeySecret -L CH
+          echo y | ./ossutil64 rm oss://hutu0/github -r
+          ./ossutil64 cp github-contribution-grid-snake.svg oss://hutu0/github/
+          ./ossutil64 cp github-contribution-grid-snake-dark.svg oss://hutu0/github/
